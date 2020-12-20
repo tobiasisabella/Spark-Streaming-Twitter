@@ -30,7 +30,7 @@ ssc = StreamingContext(sc, INTERVALO_BATCH)
 
 # Reading the text file and creating an RDD in memory with Spark
 #This file contains feelings related to a book. Number 0 is negative feelings and number 1 is positive feelings. It is an example.
-arquivo = sc.textFile("dataset_analise_sentimento.csv")
+arquivo = sc.textFile("dataset_analysis.csv")
 
 #Removing the header
 header = arquivo.take(1)[0]
